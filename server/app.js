@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-// var bodyParser = require('body-parser');
-// var index = require('/server/routes/index.js');
+var bodyParser = require('body-parser');
+var index = require('./routes/index.js');
 
 app.set('port', (process.env.PORT || 5000));
 
-// app.use('/', index)
+app.use('/', index);
+
 app.use(express.static('/server/public'));
 
 app.get('/', function(req,res){

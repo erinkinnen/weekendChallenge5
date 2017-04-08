@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       },
       css: {
         expand: true,
-        cwd: 'client/css/', // Current working directory
+        cwd: 'client/styles/', // Current working directory
         src: ['style.css'], // List of files to copy
         dest: 'server/public/views/' // Destination
       },
